@@ -66,19 +66,5 @@ export const teamData: TeamMember[] = [
     githubUrl: '#team',
     xUrl: '',
     isPlaceholder: true,
-  },
-  {
-    id: 'member-04',
-    slotCode: '04',
-    name: 'Team Member 04',
-    role: 'Technology & Automation',
-    bio: 'Connecting NFC hardware with smart business workflows.',
-    photoUrl: '',
-    websiteUrl: '#team',
-    linkedinUrl: '#team',
-    instagramUrl: '#team',
-    githubUrl: '#team',
-    xUrl: '',
-    isPlaceholder: true,
-  },
+  }
 ];
