@@ -1,5 +1,7 @@
 import founderChaitanyaImg from '@/assets/images/founder-chaitanya.jpg';
 import founder02Img from '@/assets/images/founder-02.jpg';
+import satyamMishraImg from '@/assets/images/satyam-mishra.jpg';
+import vaibhavImg from '@/assets/images/vaibhav-vivek-singh.jpg';
 
 export interface TeamMember {
   id: string;
@@ -19,8 +21,6 @@ export interface TeamMember {
 
 /**
  * Centralized team directory.
- * Team Member 01 is populated with verified founder profile details.
- * Team Members 02-04 remain temporary placeholders until real details are provided.
  */
 export const teamData: TeamMember[] = [
   {
@@ -42,10 +42,40 @@ export const teamData: TeamMember[] = [
     id: 'member-02',
     slotCode: '02',
     name: 'Arjun Mishra',
-    role: 'FOUNDER / CTO',
+    role: 'Chief Operating Officer',
     bio: 'Align technical systems and product innovation with overall business goals',
     photoUrl: founder02Img,
     photoPosition: '50% 44%',
+    websiteUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/arjun-mishra-3a5bb03a9/',
+    instagramUrl: '',
+    githubUrl: 'https://github.com/arjunmishra7880',
+    xUrl: 'https://x.com/ArjunMi17922585',
+    isPlaceholder: false,
+  },
+  {
+    id: 'member-03',
+    slotCode: '03',
+    name: 'Satyam Mishra',
+    role: 'Developer ',
+    bio: 'IT strategy and operations with business objectives, improving efficiency',
+    photoUrl: satyamMishraImg,
+    photoPosition: '50% 28%',
+    websiteUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/satyam-mishra-36b06223a',
+    instagramUrl: '',
+    githubUrl: 'https://github.com/mishrasatyam01473-ai/',
+    xUrl: 'https://x.com/SatyamMish47438',
+    isPlaceholder: false,
+  },
+  {
+    id: 'member-04',
+    slotCode: '04',
+    name: 'Vaibhav Vivek Singh',
+    role: 'Marketing Head',
+    bio: 'responsible for overall marketing strategy, brand positioning,',
+    photoUrl: vaibhavImg,
+    photoPosition: '50% 80%',
     websiteUrl: '',
     linkedinUrl: '',
     instagramUrl: '',
@@ -53,18 +83,4 @@ export const teamData: TeamMember[] = [
     xUrl: '',
     isPlaceholder: false,
   },
-  {
-    id: 'member-03',
-    slotCode: '03',
-    name: 'Team Member 03',
-    role: 'UI/UX & Product Design',
-    bio: 'Designing clean interfaces and effortless customer journeys.',
-    photoUrl: '',
-    websiteUrl: '#team',
-    linkedinUrl: '#team',
-    instagramUrl: '#team',
-    githubUrl: '#team',
-    xUrl: '',
-    isPlaceholder: true,
-  }
 ];

@@ -81,8 +81,12 @@ export const TeamSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Four-Portrait Editorial Row */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 xl:gap-7">
+          {/* Right Editorial Portrait Row */}
+          <div
+            className={`grid grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-6 xl:gap-8 ${
+              teamData.length === 3 ? 'md:grid-cols-3' : 'lg:grid-cols-4'
+            }`}
+          >
             {teamData.map((member) => {
               const isExternal = (url: string) =>
                 url.startsWith('http://') || url.startsWith('https://');

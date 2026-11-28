@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import brotocolLogo from '@/assets/images/brotocol-logo.png';
+import brotocolLogoBlack from '@/assets/images/brotocol-logo-black.png';
+import brotocolLogoWhite from '@/assets/images/brotocol-logo-white.png';
 
 interface BrandMarkProps {
   variant?: 'dark' | 'light';
@@ -12,14 +13,15 @@ export const BrandMark: React.FC<BrandMarkProps> = ({
   showTagline = false,
 }) => {
   const isLight = variant === 'light';
+  const logoSrc = isLight ? brotocolLogoWhite : brotocolLogoBlack;
 
   return (
     <span className="inline-flex items-center gap-2.5 select-none">
       <img
-        src={brotocolLogo}
+        src={logoSrc}
         alt="BROTOCOL Logo"
         className={`w-auto shrink-0 object-contain ${
-          showTagline ? 'h-9 sm:h-10' : 'h-8 sm:h-9'
+          showTagline ? 'h-8 sm:h-9' : 'h-7 sm:h-8'
         }`}
       />
       <span className="flex flex-col leading-none">
